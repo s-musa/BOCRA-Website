@@ -43,7 +43,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'Admin',
             'email' => 'admin@app.com',
             'email_verified_at' => now(),
-            'password' => Hash::make('admin@!2025'),
+            'password' => Hash::make('admin@!2026'),
             'activated' => true,
         ]);
         

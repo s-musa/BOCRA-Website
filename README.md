@@ -17,10 +17,10 @@ The system is built to support **content-heavy and service-oriented platforms**,
 ## 2. Technology Stack
 
 ### Backend
-- **Laravel 10+**
+- **Laravel 11+**
 - RESTful API architecture
 - Eloquent ORM
-- MySQL / MariaDB
+- MySQL
 
 ### Frontend (Admin Dashboard)
 - **Vue 3**
@@ -85,10 +85,10 @@ Easily extendable modules:
 ## 4. Installation
 
 ### Requirements
-- PHP >= 8.1
+- PHP >= 8.2
 - Composer
-- Node.js >= 18
-- MySQL / MariaDB
+- Node.js >= 20
+- MySQL 8+
 
 ---
 
@@ -98,3 +98,46 @@ Easily extendable modules:
 ```bash
 git clone <repository-url>
 cd <project-folder>
+```
+
+#### 2. Install PHP Dependencies
+```bash
+composer install
+```
+
+#### 3. Install Node Dependencies
+```bash
+npm install
+```
+
+#### 4. Copy Environment File
+```bash
+cp .env.example .env
+```
+
+#### 5. Generate Application Key
+```bash
+php artisan key:generate
+```
+
+#### 6. Run Migrations and Seeders
+```bash
+php artisan migrate --seed
+```
+
+#### 7. Build Frontend Assets
+```bash
+npm run dev     # for development
+npm run build   # for production
+```
+
+#### 8. Run the Application
+```bash
+php artisan serve
+```
+
+#### 9. Demo Credentials
+Use the following login credentials to access the admin dashboard
+email: **admin@app.com**
+password: **admin@!2026**
+
